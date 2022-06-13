@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "MO5pTlw6wR7OpCdrcXce5v06xtSzManctUS8Elx7amwVsqiC72RXl2A6OQhXtru5k0R1DDDGk3MfSp4oJTc49Q==",
+  "success": true,
+  "projectFilePath": "D:\\Source\\Repos\\SATSystem\\SATPointofSale\\SATPOS\\SATPOS\\SATPOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}
