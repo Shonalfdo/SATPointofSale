@@ -16,4 +16,7 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgHandyControl Condition=" '$(PkgHandyControl)' == '' ">C:\Users\USER\.nuget\packages\handycontrol\3.3.0</PkgHandyControl>
+  </PropertyGroup>
 </Project>

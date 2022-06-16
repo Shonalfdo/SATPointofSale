@@ -18,3 +18,5 @@ D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.c
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.dll
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.pdb
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.genruntimeconfig.cache
+D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\bin\Debug\netcoreapp3.1\HandyControl.dll
+D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\App.baml

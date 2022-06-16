@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/KmerMT9r0AAULK/rpIbt0hxb1Ruz1X+LdHYaMKNk4Z7xedcbpuh3TRc0LdKgJjmKxhj5TgCMT15CigbpBYB0A==",
+  "dgSpecHash": "kfPEcCFe8PV+089kSiQyZjw9LXQZvJYz1KjDNC0mhsTRHfgN+BlqyBtLyFAVNji/LGheRUlJmvzPYTMuwMig3Q==",
   "success": true,
   "projectFilePath": "D:\\Source\\Repos\\SATSystem\\SATPointofSale\\SATPOS\\SATPOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\handycontrol\\3.3.0\\handycontrol.3.3.0.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.21\\microsoft.netcore.app.host.win-x64.3.1.21.nupkg.sha512"
   ],
   "logs": []
