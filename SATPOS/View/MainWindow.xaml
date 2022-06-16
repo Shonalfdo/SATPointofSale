@@ -14,11 +14,31 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
-            <RowDefinition MinHeight="500" Height="auto"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="100"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
 
-        <Canvas Grid.Row="0" Grid.ColumnSpan="2" Background="#FFF0F0F0" />
+        <Canvas Grid.Row="0" Grid.ColumnSpan="2" Background="#FFF0F0F0" >
+
+        </Canvas>
+
+        <DataGrid Grid.Row="1"/>
+        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
+        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="95,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
+        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="180,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
+        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="265,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
+        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="350,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
+        
+        <TabControl Grid.Row="0" Grid.ColumnSpan="2">
+            <TabItem Header="Billing">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Account">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+
     </Grid>
 </Window>
