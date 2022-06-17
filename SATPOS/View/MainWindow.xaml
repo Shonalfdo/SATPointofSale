@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SATPOS"
         mc:Ignorable="d"
-        Title="SAT|POS" Height="768" Width="1366"
+        Title="SAT|POS" Height="700" Width="1200"
         xmlns:hc="https://handyorg.github.io/handycontrol">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -29,8 +30,8 @@
         <Button Content="QuickBut" HorizontalAlignment="Left" Margin="180,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
         <Button Content="QuickBut" HorizontalAlignment="Left" Margin="265,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
         <Button Content="QuickBut" HorizontalAlignment="Left" Margin="350,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
-        
-        <TabControl Grid.Row="0" Grid.ColumnSpan="2">
+
+        <TabControl Grid.Row="0" Grid.ColumnSpan="3">
             <TabItem Header="Billing">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
@@ -38,6 +39,24 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
+
+        <Label Content="Current Item"   Grid.Column="1" Margin="10,10,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label Content="Quantity"       Grid.Column="1" Margin="10,45,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label Content="Unit Price"     Grid.Column="1" Margin="11,80,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label Content="Sub Total"      Grid.Column="1" Margin="10,150,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label Content="D/C"            Grid.Column="1" Margin="10,220,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label Content="Add"            Grid.Column="1" Margin="10,255,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label Content="Total"          Grid.Column="1" Margin="11,325,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left" Style="{StaticResource LabelDanger}"/>
+
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,45,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,80,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,220,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,255,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,325,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
+
+        <StatusBar Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Style="{StaticResource StatusBarBaseStyle}" />
 
 
     </Grid>
