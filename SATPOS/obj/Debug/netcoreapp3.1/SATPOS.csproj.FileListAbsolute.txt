@@ -4,11 +4,12 @@ D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\bin\Debug\netcoreapp3.1\SATPOS.r
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\bin\Debug\netcoreapp3.1\SATPOS.runtimeconfig.dev.json
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\bin\Debug\netcoreapp3.1\SATPOS.dll
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\bin\Debug\netcoreapp3.1\SATPOS.pdb
-D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.csproj.AssemblyReference.cache
+D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\bin\Debug\netcoreapp3.1\HandyControl.dll
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\View\MainWindow.g.cs
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\App.g.cs
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS_MarkupCompile.cache
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS_MarkupCompile.lref
+D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\App.baml
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\View\MainWindow.baml
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.g.resources
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.GeneratedMSBuildEditorConfig.editorconfig
@@ -18,5 +19,6 @@ D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.c
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.dll
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.pdb
 D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.genruntimeconfig.cache
-D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\bin\Debug\netcoreapp3.1\HandyControl.dll
-D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\App.baml
+D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\SATPOS.csproj.AssemblyReference.cache
+D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\View\Biller.g.cs
+D:\Source\Repos\SATSystem\SATPointofSale\SATPOS\obj\Debug\netcoreapp3.1\View\Biller.baml

@@ -4,9 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SATPOS"
+        
         mc:Ignorable="d"
-        Title="SAT|POS" Height="700" Width="1200"
-        xmlns:hc="https://handyorg.github.io/handycontrol">
+        Title="SAT|POS" Height="740" Width="1200"
+        xmlns:hc="https://handyorg.github.io/handycontrol" 
+        xmlns:local1="clr-namespace:SATPOS.ViewModel">
+
+
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="12*"/>
@@ -17,6 +22,7 @@
             <RowDefinition Height="100"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="40"/>
             <RowDefinition Height="20"/>
         </Grid.RowDefinitions>
 
@@ -24,12 +30,15 @@
 
         </Canvas>
 
-        <DataGrid Grid.Row="1"/>
-        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
-        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="95,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
+        <DataGrid Grid.Row="1" x:Name="BillingGrid" ItemsSource="{Binding }" IsSynchronizedWithCurrentItem="False">
+
+        </DataGrid>
+
+        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="10,0,0,0"  Grid.Row="2" MinHeight="75" MinWidth="75"/>
+        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="95,0,0,0"  Grid.Row="2" MinHeight="75" MinWidth="75"/>
         <Button Content="QuickBut" HorizontalAlignment="Left" Margin="180,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
         <Button Content="QuickBut" HorizontalAlignment="Left" Margin="265,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
-        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="350,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75"/>
+        <Button Content="QuickBut" HorizontalAlignment="Left" Margin="350,0,0,0" Grid.Row="2" MinHeight="75" MinWidth="75" Command="ApplicationCommands.New"/>
 
         <TabControl Grid.Row="0" Grid.ColumnSpan="3">
             <TabItem Header="Billing">
@@ -40,24 +49,28 @@
             </TabItem>
         </TabControl>
 
-        <Label Content="Current Item"   Grid.Column="1" Margin="10,10,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
-        <Label Content="Quantity"       Grid.Column="1" Margin="10,45,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
-        <Label Content="Unit Price"     Grid.Column="1" Margin="11,80,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
-        <Label Content="Sub Total"      Grid.Column="1" Margin="10,150,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
-        <Label Content="D/C"            Grid.Column="1" Margin="10,220,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
-        <Label Content="Add"            Grid.Column="1" Margin="10,255,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
-        <Label Content="Total"          Grid.Column="1" Margin="11,325,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left" Style="{StaticResource LabelDanger}"/>
+        <Label  Content="Current Item"   Grid.Column="1" Margin="10,10,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label  Content="Quantity"       Grid.Column="1" Margin="10,45,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label  Content="Unit Price"     Grid.Column="1" Margin="11,80,0,0"   Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        
+        <Button Content="Sub Total"      Grid.Column="1" Margin="10,150,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left" Style="{StaticResource ButtonWarning}" Click="Button_Click_2"/>
+        
+        <Label  Content="D/C"            Grid.Column="1" Margin="10,220,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        <Label  Content="Add"            Grid.Column="1" Margin="10,255,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left"/>
+        
+        <Button Content="Total"          Grid.Column="1" Margin="11,325,0,0"  Grid.Row="1" Height="30"  VerticalAlignment="Top" Width="125" HorizontalAlignment="Left" Style="{StaticResource ButtonDanger}" Click="Button_Click"/>
 
-        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,45,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,80,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,220,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,255,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
-        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,325,5,0" Grid.Row="1" Text="0000000000" Height="30" TextWrapping="Wrap"  Width="200"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,5,0"  Grid.Row="1" Height="30" TextWrapping="Wrap"  Width="200" x:Name="In_Code" />
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,45,5,0"  Grid.Row="1" Height="30" TextWrapping="Wrap"  Width="200" x:Name="In_Quantz"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,80,5,0"  Grid.Row="1" Height="30" TextWrapping="Wrap"  Width="200" x:Name="In_UnitPrice"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,150,5,0" Grid.Row="1" Height="30" TextWrapping="Wrap"  Width="200" x:Name="In_Sub"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,220,5,0" Grid.Row="1" Height="30" TextWrapping="Wrap"  Width="200" x:Name="In_DCount"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,255,5,0" Grid.Row="1" Height="30" TextWrapping="Wrap"  Width="200" x:Name="In_Add"/>
+        <TextBox Grid.Column="2" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,325,5,0" Grid.Row="1" Height="30" TextWrapping="Wrap"  Width="200" x:Name="Out_Total" Text="0"/>
 
-        <StatusBar Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Style="{StaticResource StatusBarBaseStyle}" />
+        <TextBox Grid.Row="3" Grid.ColumnSpan="4" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" x:FieldModifier="public" Name="ConsoleText"/>
 
-
+        <StatusBar Grid.Row="4" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Style="{StaticResource StatusBarBaseStyle}" />
+        
     </Grid>
 </Window>
